@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Nestring Foods</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --olive:    #4a5240;
+    --cream:    #faf7f0;
+    --warm:     #f0e8d5;
+    --gold:     #c8963e;
+    --text:     #2a2a1e;
+    --muted:    #7a7a6a;
+    --border:   #ddd5c0;
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 16px;
+  }
+
+  /* Header */
+  header {
+    background: var(--olive);
+    color: white;
+    padding: 60px 24px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      45deg, transparent, transparent 40px,
+      rgba(255,255,255,.03) 40px, rgba(255,255,255,.03) 80px
+    );
+  }
+  .brand {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 6vw, 52px);
+    font-weight: 900;
+    letter-spacing: -1px;
+    position: relative;
+  }
+  .brand span { color: var(--gold); }
+  .tagline {
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.65);
+    margin-top: 8px;
+    position: relative;
+  }
+  .policy-title {
+    margin-top: 32px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    position: relative;
+  }
+  .last-updated {
+    font-size: 13px;
+    color: rgba(255,255,255,.5);
+    margin-top: 8px;
+    position: relative;
+  }
+
+  /* Main content */
+  .container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+
+  .intro-box {
+    background: var(--warm);
+    border-left: 4px solid var(--gold);
+    border-radius: 0 8px 8px 0;
+    padding: 20px 24px;
+    margin-bottom: 48px;
+    font-size: 15px;
+    color: var(--text);
+  }
+
+  section { margin-bottom: 44px; }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--olive);
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  h2 .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: var(--gold);
+    color: white;
+    border-radius: 50%;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  p { margin-bottom: 14px; color: #3a3a2e; }
+
+  ul {
+    list-style: none;
+    margin: 10px 0 14px 0;
+  }
+  ul li {
+    padding: 6px 0 6px 22px;
+    position: relative;
+    color: #3a3a2e;
+  }
+  ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: 700;
+  }
+
+  .highlight {
+    background: var(--warm);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 14px 0;
+    font-size: 15px;
+  }
+
+  /* Contact card */
+  .contact-card {
+    background: var(--olive);
+    color: white;
+    border-radius: 12px;
+    padding: 28px 28px;
+    margin-top: 16px;
+  }
+  .contact-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: var(--gold);
+  }
+  .contact-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: rgba(255,255,255,.85);
+  }
+  .contact-row .icon {
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  /* Footer */
+  footer {
+    background: var(--text);
+    color: rgba(255,255,255,.5);
+    text-align: center;
+    padding: 24px;
+    font-size: 13px;
+  }
+  footer strong { color: var(--gold); }
+
+  @media (max-width: 600px) {
+    .container { padding: 36px 16px 60px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">Nestring <span>Foods</span></div>
+  <div class="tagline">Fresh Meals · Great Taste</div>
+  <div class="policy-title">Privacy Policy</div>
+  <div class="last-updated">Last updated: May 16, 2026</div>
+</header>
+
+<div class="container">
+
+  <div class="intro-box">
+    At <strong>Nestring Foods</strong>, we take your privacy seriously. This policy explains what information we collect when you order food through our WhatsApp service, how we use it, and how we protect it.
+  </div>
+
+  <!-- 1 -->
+  <section>
+    <h2><span class="num">1</span> Who We Are</h2>
+    <p><strong>Nestring Foods</strong> is a food delivery and takeaway service operating in Kenya. We use WhatsApp Business to receive orders, communicate with customers, and confirm deliveries.</p>
+    <p>We are the data controller for personal information you share with us when using our WhatsApp ordering service.</p>
+  </section>
+
+  <!-- 2 -->
+  <section>
+    <h2><span class="num">2</span> Information We Collect</h2>
+    <p>When you interact with our WhatsApp ordering bot or our team, we may collect:</p>
+    <ul>
+      <li>Your <strong>WhatsApp phone number</strong> and display name</li>
+      <li>Your <strong>delivery address</strong> or location (when shared)</li>
+      <li>Your <strong>order details</strong> — items ordered, quantities, and preferences</li>
+      <li>Your <strong>payment reference</strong> — M-Pesa transaction codes you send us</li>
+      <li>Your <strong>order history</strong> — past orders placed with us</li>
+      <li>Messages you send us through WhatsApp</li>
+    </ul>
+    <p>We do <strong>not</strong> collect your M-Pesa PIN, full bank details, national ID, or any passwords.</p>
+  </section>
+
+  <!-- 3 -->
+  <section>
+    <h2><span class="num">3</span> How We Use Your Information</h2>
+    <p>We use your information only for the following purposes:</p>
+    <ul>
+      <li>To <strong>process and fulfill your food orders</strong></li>
+      <li>To <strong>confirm payment</strong> and update your order status</li>
+      <li>To <strong>contact you</strong> about your delivery — estimated time, driver details</li>
+      <li>To <strong>resolve complaints</strong> or issues with your order</li>
+      <li>To <strong>improve our service</strong> — understanding popular dishes and delivery areas</li>
+      <li>To send you <strong>order updates</strong> via WhatsApp (e.g. "Your order is on the way")</li>
+    </ul>
+    <p>We do <strong>not</strong> use your information for advertising, sell it to third parties, or share it with any marketing companies.</p>
+  </section>
+
+  <!-- 4 -->
+  <section>
+    <h2><span class="num">4</span> WhatsApp & Meta</h2>
+    <p>Our ordering service runs on <strong>WhatsApp Business Platform</strong>, provided by Meta Platforms, Inc. When you message us on WhatsApp:</p>
+    <ul>
+      <li>Meta processes your messages in accordance with their own <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" style="color:var(--gold)">WhatsApp Privacy Policy</a></li>
+      <li>We receive only the content of messages you send to our business number</li>
+      <li>We store order-related data in our secure systems to process your order</li>
+    </ul>
+    <div class="highlight">
+      By messaging our WhatsApp number to place an order, you agree to WhatsApp's Terms of Service and consent to us processing your order information as described in this policy.
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section>
+    <h2><span class="num">5</span> M-Pesa Payments</h2>
+    <p>We accept payments via <strong>M-Pesa</strong> (Safaricom). When you pay:</p>
+    <ul>
+      <li>You send money directly to our M-Pesa Till Number — we never handle your PIN</li>
+      <li>You may share your M-Pesa confirmation code with us to confirm payment</li>
+      <li>We store only the transaction reference code — not your full financial details</li>
+      <li>M-Pesa transactions are governed by <a href="https://www.safaricom.co.ke/personal/m-pesa/getting-started/m-pesa-privacy-statement" target="_blank" style="color:var(--gold)">Safaricom's Privacy Policy</a></li>
+    </ul>
+  </section>
+
+  <!-- 6 -->
+  <section>
+    <h2><span class="num">6</span> Data Storage & Security</h2>
+    <p>Your order data is stored securely using <strong>Google Firebase / Firestore</strong>, a cloud database with industry-standard encryption and security controls.</p>
+    <ul>
+      <li>Data is encrypted in transit and at rest</li>
+      <li>Access is restricted to authorised Nestring Foods staff only</li>
+      <li>We do not store payment card numbers or M-Pesa PINs</li>
+      <li>Order records are retained for up to <strong>2 years</strong> for accounting and dispute resolution</li>
+    </ul>
+  </section>
+
+  <!-- 7 -->
+  <section>
+    <h2><span class="num">7</span> Sharing Your Information</h2>
+    <p>We do <strong>not</strong> sell, rent, or trade your personal information. We may share limited information only in these cases:</p>
+    <ul>
+      <li><strong>Delivery riders</strong> — your phone number and delivery area are shared with the rider assigned to your order</li>
+      <li><strong>Legal requirements</strong> — if required by Kenyan law or a court order</li>
+      <li><strong>Service providers</strong> — Firebase (Google) for data storage, Safaricom for payment processing</li>
+    </ul>
+  </section>
+
+  <!-- 8 -->
+  <section>
+    <h2><span class="num">8</span> Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> the personal data we hold about you</li>
+      <li><strong>Correct</strong> any inaccurate information</li>
+      <li><strong>Request deletion</strong> of your data — we will delete your order history within 30 days of request, unless retention is required by law</li>
+      <li><strong>Opt out</strong> of receiving WhatsApp notifications from us at any time by messaging us "STOP"</li>
+    </ul>
+    <p>To exercise any of these rights, contact us using the details below.</p>
+  </section>
+
+  <!-- 9 -->
+  <section>
+    <h2><span class="num">9</span> Children's Privacy</h2>
+    <p>Our service is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has shared information with us, please contact us and we will delete it promptly.</p>
+  </section>
+
+  <!-- 10 -->
+  <section>
+    <h2><span class="num">10</span> Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. When we do, we will update the "Last updated" date at the top of this page. Continued use of our WhatsApp ordering service after changes constitutes your acceptance of the updated policy.</p>
+  </section>
+
+  <!-- 11 -->
+  <section>
+    <h2><span class="num">11</span> Contact Us</h2>
+    <p>If you have any questions about this privacy policy or how we handle your data, please contact us:</p>
+    <div class="contact-card">
+      <h3>Nestring Foods</h3>
+      <div class="contact-row"><span class="icon">📍</span> Kenya</div>
+      <div class="contact-row"><span class="icon">📲</span> WhatsApp: +254 700 000 000</div>
+      <div class="contact-row"><span class="icon">⏰</span> Monday – Saturday, 7:00 AM – 9:00 PM</div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2026 <strong>Nestring Foods</strong>. All rights reserved. &nbsp;|&nbsp; Kenya
+</footer>
+
+</body>
+</html>
